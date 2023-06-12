@@ -14,4 +14,6 @@ This repo is made of two parts:
 
 - This is the web server which runs remotely, allowing for PocketSynth's cloud connectivity.
 
+- The webapp is written in Python + Javascript using the FastAPI framework.
+
 - Projects are uploaded and downloaded via this server's REST API. The projects are stored as XML text documents in a SQLite database.
