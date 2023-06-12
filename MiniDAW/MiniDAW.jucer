@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="OIqhvs" name="MiniDAW" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginFormats="buildStandalone"
+              pluginCharacteristicsValue="pluginIsSynth" companyName="Xynth Audio"
+              cppLanguageStandard="17">
+  <MAINGROUP id="xGyaSi" name="MiniDAW">
+    <GROUP id="{FB2289AB-6E62-E91E-E1B8-2478275679C7}" name="Source">
+      <GROUP id="{3D68BDB8-24C3-AA2E-60AE-1BAE7D016140}" name="DSP">
+        <GROUP id="{87884DA1-9C0F-EC24-E649-B2E7127306A9}" name="Controllers">
+          <GROUP id="{D91394C6-DE80-5481-35A5-C7C3C45EA8F3}" name="Metronome">
+            <FILE id="lyIxNw" name="MetronomeLane.cpp" compile="1" resource="0"
+                  file="Source/DSP/Controllers/Metronome/MetronomeLane.cpp"/>
+            <FILE id="IQIZIm" name="MetronomeLane.h" compile="0" resource="0" file="Source/DSP/Controllers/Metronome/MetronomeLane.h"/>
+          </GROUP>
+          <GROUP id="{7C640CD5-B7C3-42FE-2288-53F01CD6E87F}" name="MidiLane">
+            <FILE id="XxM82U" name="MidiLane.cpp" compile="1" resource="0" file="Source/DSP/Controllers/MidiLane/MidiLane.cpp"/>
+            <FILE id="X3vbRc" name="MidiLane.h" compile="0" resource="0" file="Source/DSP/Controllers/MidiLane/MidiLane.h"/>
+            <FILE id="McKLbX" name="MidiStore.cpp" compile="1" resource="0" file="Source/DSP/Controllers/MidiLane/MidiStore.cpp"/>
+            <FILE id="b4powL" name="MidiStore.h" compile="0" resource="0" file="Source/DSP/Controllers/MidiLane/MidiStore.h"/>
+          </GROUP>
+          <FILE id="Jax1iD" name="Arrangement.cpp" compile="1" resource="0" file="Source/DSP/Controllers/Arrangement.cpp"/>
+          <FILE id="aDmJMr" name="Arrangement.h" compile="0" resource="0" file="Source/DSP/Controllers/Arrangement.h"/>
+          <FILE id="yFNYW0" name="Lane.h" compile="0" resource="0" file="Source/DSP/Controllers/Lane.h"/>
+          <FILE id="ITcGHk" name="SongData.cpp" compile="1" resource="0" file="Source/DSP/Controllers/SongData.cpp"/>
+          <FILE id="LrW334" name="SongData.h" compile="0" resource="0" file="Source/DSP/Controllers/SongData.h"/>
+          <FILE id="dwEWl5" name="Storable.h" compile="0" resource="0" file="Source/DSP/Controllers/Storable.h"/>
+          <FILE id="INX0NZ" name="UserEventDispatcher.cpp" compile="1" resource="0"
+                file="Source/DSP/Controllers/UserEventDispatcher.cpp"/>
+          <FILE id="dsrwTI" name="UserEventDispatcher.h" compile="0" resource="0"
+                file="Source/DSP/Controllers/UserEventDispatcher.h"/>
+        </GROUP>
+        <GROUP id="{2DAD8D07-17EF-FB70-739B-84C21E2E495D}" name="Effects">
+          <FILE id="gxBJSc" name="ReverbProcessor.cpp" compile="1" resource="0"
+                file="Source/DSP/Effects/ReverbProcessor.cpp"/>
+          <FILE id="ZjGvy0" name="ReverbProcessor.h" compile="0" resource="0"
+                file="Source/DSP/Effects/ReverbProcessor.h"/>
+        </GROUP>
+        <GROUP id="{F443A8DA-7671-79D2-BF2C-F32C9E15E6F0}" name="Synth">
+          <GROUP id="{7E84E289-FF4A-D7F9-99B3-50CFDFD1BC6E}" name="Oscillators">
+            <FILE id="HjJC15" name="Wavetable.cpp" compile="1" resource="0" file="Source/DSP/Synth/Oscillators/Wavetable.cpp"/>
+            <FILE id="nCByBh" name="Wavetable.h" compile="0" resource="0" file="Source/DSP/Synth/Oscillators/Wavetable.h"/>
+            <FILE id="M7VX2t" name="WavetableOsc.cpp" compile="1" resource="0"
+                  file="Source/DSP/Synth/Oscillators/WavetableOsc.cpp"/>
+            <FILE id="udIDZt" name="WavetableOsc.h" compile="0" resource="0" file="Source/DSP/Synth/Oscillators/WavetableOsc.h"/>
+          </GROUP>
+          <FILE id="K0aJKY" name="Gain.cpp" compile="1" resource="0" file="Source/DSP/Synth/Gain.cpp"/>
+          <FILE id="Qo7zfA" name="Gain.h" compile="0" resource="0" file="Source/DSP/Synth/Gain.h"/>
+          <FILE id="gsHHi1" name="SynthProcessor.cpp" compile="1" resource="0"
+                file="Source/DSP/Synth/SynthProcessor.cpp"/>
+          <FILE id="maMQKe" name="SynthProcessor.h" compile="0" resource="0"
+                file="Source/DSP/Synth/SynthProcessor.h"/>
+          <FILE id="STe3dw" name="SynthVoice.cpp" compile="1" resource="0" file="Source/DSP/Synth/SynthVoice.cpp"/>
+          <FILE id="bnR2Aa" name="SynthVoice.h" compile="0" resource="0" file="Source/DSP/Synth/SynthVoice.h"/>
+        </GROUP>
+        <GROUP id="{1DA05DE5-32B3-291F-AC5A-2F359D537344}" name="Testing">
+          <FILE id="q9Wv7E" name="MidiStoreTests.cpp" compile="1" resource="0"
+                file="Source/DSP/Testing/MidiStoreTests.cpp"/>
+          <FILE id="pYkvoQ" name="MidiStoreTests.h" compile="0" resource="0"
+                file="Source/DSP/Testing/MidiStoreTests.h"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{7460E49D-459B-3731-4864-8EFCDFCCED7E}" name="Common">
+        <FILE id="LMcQ6b" name="Constants.h" compile="0" resource="0" file="Source/Common/Constants.h"/>
+        <FILE id="NrfeDt" name="EventBuffer.h" compile="0" resource="0" file="Source/Common/EventBuffer.h"/>
+        <FILE id="XfIeA3" name="Events.h" compile="0" resource="0" file="Source/Common/Events.h"/>
+        <FILE id="UacQcP" name="ParameterText.cpp" compile="1" resource="0"
+              file="Source/Common/ParameterText.cpp"/>
+        <FILE id="F8HCv0" name="ParameterText.h" compile="0" resource="0" file="Source/Common/ParameterText.h"/>
+        <FILE id="N8vbxN" name="Ranges.cpp" compile="1" resource="0" file="Source/Common/Ranges.cpp"/>
+        <FILE id="OSA8wW" name="Ranges.h" compile="0" resource="0" file="Source/Common/Ranges.h"/>
+        <FILE id="TtWjif" name="RingBuffer.cpp" compile="1" resource="0" file="Source/Common/RingBuffer.cpp"/>
+        <FILE id="YjNGvL" name="RingBuffer.h" compile="0" resource="0" file="Source/Common/RingBuffer.h"/>
+        <FILE id="Wtytsn" name="SaveManager.cpp" compile="1" resource="0" file="Source/Common/SaveManager.cpp"/>
+        <FILE id="DViAUS" name="SaveManager.h" compile="0" resource="0" file="Source/Common/SaveManager.h"/>
+      </GROUP>
+      <GROUP id="{0A5A6307-F159-57F3-AFAB-06813EF6260A}" name="GUI">
+        <GROUP id="{38D72F44-ECD3-A1BB-1E0A-2FF2608346B1}" name="CustomLooks">
+          <FILE id="Tl6OQD" name="CustomLook.cpp" compile="1" resource="0" file="Source/GUI/CustomLooks/CustomLook.cpp"/>
+          <FILE id="wshyex" name="CustomLook.h" compile="0" resource="0" file="Source/GUI/CustomLooks/CustomLook.h"/>
+        </GROUP>
+        <GROUP id="{74B61F4B-C885-C3A4-D2F7-7436A79384EC}" name="Header">
+          <FILE id="gjHzGx" name="Header.cpp" compile="1" resource="0" file="Source/GUI/Header/Header.cpp"/>
+          <FILE id="xkoItp" name="Header.h" compile="0" resource="0" file="Source/GUI/Header/Header.h"/>
+          <FILE id="w2FJnp" name="TempoSlider.cpp" compile="1" resource="0" file="Source/GUI/Header/TempoSlider.cpp"/>
+          <FILE id="tqgrSZ" name="TempoSlider.h" compile="0" resource="0" file="Source/GUI/Header/TempoSlider.h"/>
+        </GROUP>
+        <GROUP id="{C57A2054-1403-B4E3-1CF5-3DFD75BF9A39}" name="Projects">
+          <FILE id="kOiAyr" name="ProjectsHeader.cpp" compile="1" resource="0"
+                file="Source/GUI/Projects/ProjectsHeader.cpp"/>
+          <FILE id="PpzFEQ" name="ProjectsHeader.h" compile="0" resource="0"
+                file="Source/GUI/Projects/ProjectsHeader.h"/>
+          <FILE id="moQ9qG" name="ProjectsLayout.cpp" compile="1" resource="0"
+                file="Source/GUI/Projects/ProjectsLayout.cpp"/>
+          <FILE id="OWt8Q8" name="ProjectsLayout.h" compile="0" resource="0"
+                file="Source/GUI/Projects/ProjectsLayout.h"/>
+          <FILE id="ExtLPe" name="ProjectsList.cpp" compile="1" resource="0"
+                file="Source/GUI/Projects/ProjectsList.cpp"/>
+          <FILE id="OBaIjm" name="ProjectsList.h" compile="0" resource="0" file="Source/GUI/Projects/ProjectsList.h"/>
+        </GROUP>
+        <GROUP id="{093408D9-165C-FF1D-275A-95D85D2628AA}" name="Track">
+          <FILE id="XU34vK" name="SoundSelect.cpp" compile="1" resource="0" file="Source/GUI/Track/SoundSelect.cpp"/>
+          <FILE id="EMKhZI" name="SoundSelect.h" compile="0" resource="0" file="Source/GUI/Track/SoundSelect.h"/>
+          <FILE id="wA6F2e" name="Track.cpp" compile="1" resource="0" file="Source/GUI/Track/Track.cpp"/>
+          <FILE id="ZehVwd" name="Track.h" compile="0" resource="0" file="Source/GUI/Track/Track.h"/>
+          <FILE id="XSYnYU" name="TrackAudioMeter.cpp" compile="1" resource="0"
+                file="Source/GUI/Track/TrackAudioMeter.cpp"/>
+          <FILE id="BhxWTF" name="TrackAudioMeter.h" compile="0" resource="0"
+                file="Source/GUI/Track/TrackAudioMeter.h"/>
+          <FILE id="lq67K1" name="TrackLayout.cpp" compile="1" resource="0" file="Source/GUI/Track/TrackLayout.cpp"/>
+          <FILE id="S39yUX" name="TrackLayout.h" compile="0" resource="0" file="Source/GUI/Track/TrackLayout.h"/>
+        </GROUP>
+        <GROUP id="{C3FB1D63-C8AD-37F0-2744-E3006ECFE9A6}" name="Utils">
+          <FILE id="rfabNe" name="Config.cpp" compile="1" resource="0" file="Source/GUI/Utils/Config.cpp"/>
+          <FILE id="PfcpkK" name="Config.h" compile="0" resource="0" file="Source/GUI/Utils/Config.h"/>
+          <FILE id="RZU5Vn" name="FullSlider.cpp" compile="1" resource="0" file="Source/GUI/Utils/FullSlider.cpp"/>
+          <FILE id="Xluh2N" name="FullSlider.h" compile="0" resource="0" file="Source/GUI/Utils/FullSlider.h"/>
+          <FILE id="APJgxt" name="GuiData.cpp" compile="1" resource="0" file="Source/GUI/Utils/GuiData.cpp"/>
+          <FILE id="lRD5DU" name="GuiData.h" compile="0" resource="0" file="Source/GUI/Utils/GuiData.h"/>
+          <FILE id="G0Pi6N" name="TooltipLabel.cpp" compile="1" resource="0"
+                file="Source/GUI/Utils/TooltipLabel.cpp"/>
+          <FILE id="ydhQEw" name="TooltipLabel.h" compile="0" resource="0" file="Source/GUI/Utils/TooltipLabel.h"/>
+          <FILE id="xjVGZH" name="TooltipSlider.cpp" compile="1" resource="0"
+                file="Source/GUI/Utils/TooltipSlider.cpp"/>
+          <FILE id="pJtEVX" name="TooltipSlider.h" compile="0" resource="0" file="Source/GUI/Utils/TooltipSlider.h"/>
+        </GROUP>
+        <FILE id="cTj4WP" name="WindowLayout.cpp" compile="1" resource="0"
+              file="Source/GUI/WindowLayout.cpp"/>
+        <FILE id="D4wlro" name="WindowLayout.h" compile="0" resource="0" file="Source/GUI/WindowLayout.h"/>
+      </GROUP>
+      <FILE id="erY1O4" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="iaEQjy" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="ZgVkKT" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="G4CvCy" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MiniDAW"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MiniDAW"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MiniDAW"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MiniDAW"/>
+        <CONFIGURATION isDebug="1" defines="UNIT_TESTS=1" name="Testing"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MiniDAW"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MiniDAW"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
